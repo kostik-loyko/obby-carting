@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Money
+  - Shop
+  - Object
+  - CatchMoney
+  - Points
+  - Points1
+  - Points2
+  - Points3
+  - Glove
+  - Points4
+  - Points5
+  - ItemQuest
+  - Enemy
+  - Bullet
+  - FxTemporaire
+  - FPSCamera
+  - BulletEnemy
+  - Egg
+  - Tree
+  - Aim
+  - Grenade
+  - garden
+  - PunchEnemy
+  - Head
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Tree
+  - garden
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0

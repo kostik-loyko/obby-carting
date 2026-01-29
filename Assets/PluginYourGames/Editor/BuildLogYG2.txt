@@ -1,0 +1,3 @@
+Build path: D:/Study/yandex/unity-games/01.26/obby-neck
+Build number: 32
+PluginYG version: 2.0041

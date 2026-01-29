@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb521a4d656ab6445b56d5136d514b71, type: 3}
+  m_Name: Brainrot 118
+  m_EditorClassIdentifier: 
+  index: 0
+  Icon: {fileID: 21300000, guid: 7587c3a770581b748ac80fc720d3e3cb, type: 3}
+  price: 0
+  mine: 1000
+  rarityRU: "\u043C\u0438\u0444\u0438\u0447\u0435\u0441\u043A\u0438\u0439"
+  rarityEN: mythic
+  nameRU: "\u0422\u0435\u043B\u0435\u0432\u0438\u0437\u0438\u043E\u043D\u0435 \u0422\u0440\u0438\u0441\u0442\u0438\u043E\u043D\u0435"
+  nameEN: Televisionne Tristionne
