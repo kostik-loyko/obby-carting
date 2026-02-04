@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,12 +6,10 @@ using YG;
 public class ShopHatBTN : MonoBehaviour
 {
     public int hatPrice = 0;
-    //public float velocityCoficient = 1.1f;
-    public Button buyButton; // Кнопка покупки
-    public TextMeshProUGUI statusText; // Текстовое поле для вывода статуса покупки
+    public Button buyButton; 
+    public TextMeshProUGUI statusText;
     public int hatIndex = 0;
     public bool firstHatBuy = false;
-    //int currentTrailIndex = 999; // Стартовый технический индекс для корректоной работы кода
 
     private ShopHats manager;
 

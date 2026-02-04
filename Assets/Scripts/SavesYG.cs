@@ -14,7 +14,7 @@ namespace YG
 
         // Ваши сохранения
         public int bestScore = 0;
-        public float score = 0;
+        public float score = 5000000;
         public float rate = 100;
         public float bigRate = 500f;
         public float finalBigRate;
@@ -268,6 +268,17 @@ namespace YG
 
         public int countCubes = 100;
         public bool[] unlockBranrot = new bool[230];
+
+        public int currentCartIndex = 999;
+        public bool hasCarts = false;
+        public int cartBought_0;
+        public int cartBought_1;
+        public int cartBought_2;
+        public int cartBought_3;
+        public int cartBought_4;
+        public int cartBought_5;
+        public int cartBought_6;
+        public int cartBought_7;
 
         //public Vector3 neckPosition = new Vector3(806.48f, 10.30f, -6.33f);
         public SavesYG()

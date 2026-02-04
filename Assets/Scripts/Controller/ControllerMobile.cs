@@ -68,6 +68,8 @@ public class ControllerMobile : MonoBehaviour
         {
             controller.enabled = false;
             rb.isKinematic = true;
+            _animator.SetBool("run", false);
+            return;
         }
         else
         {

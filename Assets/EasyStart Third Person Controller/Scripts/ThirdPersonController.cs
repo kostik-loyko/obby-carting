@@ -80,6 +80,8 @@ public class ThirdPersonController : MonoBehaviour
         {
             cc.enabled = false;
             rb.isKinematic = true;
+            animator.SetBool("run", false);
+            return;
         }
         else
         {

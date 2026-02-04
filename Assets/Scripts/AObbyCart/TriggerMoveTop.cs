@@ -9,4 +9,11 @@ public class TriggerMoveTop : MonoBehaviour
             other.gameObject.GetComponent<MoveTop>().OnMoveTop();
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.GetComponent<MoveTop>())
+        {
+            other.gameObject.GetComponent<MoveTop>().OffMoveTop();
+        }
+    }
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
@@ -22,7 +20,6 @@ public class Pets : MonoBehaviour
     public bool hasPets = false;
 
     public GameObject[] pets;
-    [SerializeField] GrowNeck growNeck;
 
     void Start()
     {
@@ -55,7 +52,6 @@ public class Pets : MonoBehaviour
         }
         pets[indexPet].SetActive(true);
         hasPets = true;
-        growNeck.UpRateSecondGrowNeck(indexPet);
 
         YandexGame.savesData.hasPets = hasPets;
         YandexGame.SaveProgress();

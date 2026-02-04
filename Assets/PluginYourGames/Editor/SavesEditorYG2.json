@@ -7,7 +7,7 @@
         false,
         false
     ],
-    "idSave": 16423,
+    "idSave": 16746,
     "money": 1,
     "newPlayerName": "Hello!",
     "openLevels": [
@@ -16,7 +16,7 @@
         false
     ],
     "bestScore": 0,
-    "score": 0.0,
+    "score": 4964000.0,
     "rate": 100.0,
     "bigRate": 500.0,
     "finalBigRate": 0.0,
@@ -409,8 +409,8 @@
         false,
         false
     ],
-    "neckHightLocal": 2.0,
-    "neckHeightUI": 9,
+    "neckHightLocal": 0.0,
+    "neckHeightUI": 0,
     "speedGrowNeck": 0.10000000149011612,
     "neckSecondRateUI": 1,
     "countCubes": 100,
@@ -645,5 +645,15 @@
         false,
         false,
         false
-    ]
+    ],
+    "currentCartIndex": 1,
+    "hasCarts": true,
+    "cartBought_0": 1,
+    "cartBought_1": 1,
+    "cartBought_2": 1,
+    "cartBought_3": 1,
+    "cartBought_4": 1,
+    "cartBought_5": 1,
+    "cartBought_6": 1,
+    "cartBought_7": 1
 }

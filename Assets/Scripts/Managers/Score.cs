@@ -76,8 +76,6 @@ public class Score : MonoBehaviour
         coeffRate = YandexGame.savesData.coeffRate;
 
         upRatePrise = YandexGame.savesData.upRatePrise;
-        //upRateText.text = coeffRate.ToString();
-        //upRatePriseText.text = ShortScaleString.parseFloat(upRatePrise, 1, 1000, true).ToString();
 
         bonusRate = YandexGame.savesData.bonusRate;
         BonusCoeffRate();
