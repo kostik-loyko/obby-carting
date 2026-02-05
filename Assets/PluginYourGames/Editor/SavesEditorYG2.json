@@ -7,7 +7,7 @@
         false,
         false
     ],
-    "idSave": 16746,
+    "idSave": 16948,
     "money": 1,
     "newPlayerName": "Hello!",
     "openLevels": [
@@ -16,7 +16,7 @@
         false
     ],
     "bestScore": 0,
-    "score": 4964000.0,
+    "score": 638.0,
     "rate": 100.0,
     "bigRate": 500.0,
     "finalBigRate": 0.0,
@@ -646,14 +646,14 @@
         false,
         false
     ],
-    "currentCartIndex": 1,
+    "currentCartIndex": 0,
     "hasCarts": true,
     "cartBought_0": 1,
-    "cartBought_1": 1,
-    "cartBought_2": 1,
-    "cartBought_3": 1,
-    "cartBought_4": 1,
-    "cartBought_5": 1,
-    "cartBought_6": 1,
-    "cartBought_7": 1
+    "cartBought_1": 0,
+    "cartBought_2": 0,
+    "cartBought_3": 0,
+    "cartBought_4": 0,
+    "cartBought_5": 0,
+    "cartBought_6": 0,
+    "cartBought_7": 0
 }

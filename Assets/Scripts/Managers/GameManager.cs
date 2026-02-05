@@ -179,14 +179,14 @@ public class GameManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
-            if (Input.GetKeyDown(KeyCode.T))
-            {
-                ShopeTrails.SetActive(true);
-                OffPunch();
-                inMenu = true;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+            //if (Input.GetKeyDown(KeyCode.T))
+            //{
+            //    ShopeTrails.SetActive(true);
+            //    OffPunch();
+            //    inMenu = true;
+            //    Cursor.lockState = CursorLockMode.None;
+            //    Cursor.visible = true;
+            //}
             if (Input.GetKeyDown(KeyCode.Y))
             {
                 WheelFortune.SetActive(true);
@@ -211,14 +211,14 @@ public class GameManager : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
-            if (Input.GetKeyDown(KeyCode.J))
-            {
-                brCollect.SetActive(true);
-                OffPunch();
-                inMenu = true;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
+            //if (Input.GetKeyDown(KeyCode.J))
+            //{
+            //    brCollect.SetActive(true);
+            //    OffPunch();
+            //    inMenu = true;
+            //    Cursor.lockState = CursorLockMode.None;
+            //    Cursor.visible = true;
+            //}
         }
     }
     public void OffUI()

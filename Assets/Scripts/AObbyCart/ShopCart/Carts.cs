@@ -22,6 +22,7 @@ public class Carts : MonoBehaviour
     public GameObject[] carts;
     [SerializeField] GameObject[] cartsMove;
     [SerializeField] GameObject[] hideCarts;
+    [SerializeField] MoveTop moveTop;
 
     void Start()
     {
@@ -54,6 +55,8 @@ public class Carts : MonoBehaviour
         }
         carts[indexCart].SetActive(true);
         hasCarts = true;
+
+        moveTop.SetSpeedCart(currentCartIndex);
 
         YandexGame.savesData.hasCarts = hasCarts;
         YandexGame.SaveProgress();
