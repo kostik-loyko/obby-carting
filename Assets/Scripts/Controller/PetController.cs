@@ -4,15 +4,19 @@ public class PetController : MonoBehaviour
 {
 
     Transform player;
+    private MoveTop _moveTop;
     [SerializeField] float followDistance = 3f;
     float moveSpeed = 5f;
 
     void Start()
     {
         player = FindObjectOfType<PlayerController>().transform;
+        _moveTop = player.GetComponent<MoveTop>();
     }
+
     void Update()
     {
+        _moveTop.SetSpeedPet(ref moveSpeed);
         float distance = Vector3.Distance(player.position, transform.position);
         if (distance > followDistance)
         {

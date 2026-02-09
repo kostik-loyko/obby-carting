@@ -19,7 +19,7 @@ public class Carts : MonoBehaviour
     public int currentCartIndex;
     public bool hasCarts = false;
 
-    public GameObject[] carts;
+    public GameObject[] cartsBack;
     [SerializeField] GameObject[] cartsMove;
     [SerializeField] GameObject[] hideCarts;
     [SerializeField] MoveTop moveTop;
@@ -49,11 +49,11 @@ public class Carts : MonoBehaviour
     }
     public void PickCarts(int indexCart)
     {
-        for (int i = 0; i < carts.Length; i++)
+        for (int i = 0; i < cartsBack.Length; i++)
         {
-            carts[i].SetActive(false);
+            cartsBack[i].SetActive(false);
         }
-        carts[indexCart].SetActive(true);
+        cartsBack[indexCart].SetActive(true);
         hasCarts = true;
 
         moveTop.SetSpeedCart(currentCartIndex);
@@ -76,12 +76,12 @@ public class Carts : MonoBehaviour
     }
     public void SetCartMove()
     {
-        carts[currentCartIndex].SetActive(false);
+        cartsBack[currentCartIndex].SetActive(false);
         cartsMove[currentCartIndex].SetActive(true);
     }
     public void SetCartStop()
     {
-        carts[currentCartIndex].SetActive(true);
+        cartsBack[currentCartIndex].SetActive(true);
         cartsMove[currentCartIndex].SetActive(false);
     }
 }

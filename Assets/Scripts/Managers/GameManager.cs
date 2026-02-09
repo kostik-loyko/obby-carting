@@ -60,7 +60,6 @@ public class GameManager : MonoBehaviour
 
     private bool canShowADV = false;
 
-    [SerializeField] GrowNeck growNeck;
     private void Start()
     {
         if (YandexGame.SDKEnabled == true)

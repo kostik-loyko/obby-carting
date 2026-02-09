@@ -22,6 +22,7 @@ public class Score : MonoBehaviour
     public int bestScore = 0;
 
     public float score = 0;
+    private float _cup = 0;
     public float rate = 100;
     public float rate1 = 200;
     public float rate2 = 300;
@@ -44,8 +45,9 @@ public class Score : MonoBehaviour
     private float finalCoeffRate = 0f;
 
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI upRateText;
-    public TextMeshProUGUI upRatePriseText;
+    public TextMeshProUGUI cupText;
+    //public TextMeshProUGUI upRateText;
+    //public TextMeshProUGUI upRatePriseText;
     public Image scoreImg;
     [SerializeField] private GameObject notMoneySign;
 
@@ -69,9 +71,11 @@ public class Score : MonoBehaviour
     {
 
         score = YandexGame.savesData.score;
+        _cup = YandexGame.savesData.cup;
 
         bestScore = YandexGame.savesData.bestScore;
         scoreText.text = ShortScaleString.parseFloat(score, 1, 1000, true).ToString();
+        cupText.text = ShortScaleString.parseFloat(_cup, 1, 1000, true).ToString();
 
         coeffRate = YandexGame.savesData.coeffRate;
 
@@ -268,7 +272,7 @@ public class Score : MonoBehaviour
     {
         score += money;
         YandexGame.savesData.score = score;
-        //UpBestScore();
+        UpBestScore();
 
         scoreText.text = ShortScaleString.parseFloat(score, 1, 1000, true).ToString();
         scoreImg.transform.localScale = new Vector2(1.1f, 1.1f);
@@ -341,8 +345,8 @@ public class Score : MonoBehaviour
             YandexGame.savesData.upRatePrise = upRatePrise;
 
             scoreText.text = ShortScaleString.parseFloat(score, 1, 1000, true).ToString();
-            upRateText.text = coeffRate.ToString();
-            upRatePriseText.text = ShortScaleString.parseFloat(upRatePrise, 1, 1000, true).ToString();
+            //upRateText.text = coeffRate.ToString();
+            //upRatePriseText.text = ShortScaleString.parseFloat(upRatePrise, 1, 1000, true).ToString();
             scoreImg.transform.localScale = new Vector2(1.1f, 1.1f);
             scoreText.fontSize = 80;
             StartCoroutine(BackScaleObjects());
@@ -462,5 +466,22 @@ public class Score : MonoBehaviour
         YandexGame.savesData.score = score;
 
         scoreText.text = ShortScaleString.parseFloat(score, 1, 1000, true).ToString();
+    }
+    public void UpCup(float amount)
+    {
+        _cup += amount;
+        YandexGame.savesData.cup = _cup;
+        UpBestScore();
+
+        cupText.text = ShortScaleString.parseFloat(_cup, 1, 1000, true).ToString();
+        SoundManager.Instance.getMoney.Play();
+    }
+    public void DownCup(float amount)
+    {
+        _cup -= amount;
+        YandexGame.savesData.cup = _cup;
+        UpBestScore();
+
+        cupText.text = ShortScaleString.parseFloat(_cup, 1, 1000, true).ToString();
     }
 }

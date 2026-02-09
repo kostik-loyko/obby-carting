@@ -20,6 +20,7 @@ public class Pets : MonoBehaviour
     public bool hasPets = false;
 
     public GameObject[] pets;
+    [SerializeField] MoveTop _moveTop;
 
     void Start()
     {
@@ -52,6 +53,8 @@ public class Pets : MonoBehaviour
         }
         pets[indexPet].SetActive(true);
         hasPets = true;
+
+        _moveTop.SetSpeedPet(indexPet);
 
         YandexGame.savesData.hasPets = hasPets;
         YandexGame.SaveProgress();

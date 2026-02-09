@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using YG;
 
@@ -25,6 +24,9 @@ public class PetNew : MonoBehaviour
     List<GameObject> PoolPets = new List<GameObject>();
     [SerializeField] GameObject player;
     [SerializeField] private Transform[] petInsideObj;
+    
+    [SerializeField] MoveTop _moveTop;
+    [SerializeField] GameObject[] hidePets;
 
     void Start()
     {
@@ -66,7 +68,6 @@ public class PetNew : MonoBehaviour
         {
             if (i != 0)
             {
-                print(petInsideObj[i].transform.gameObject);
                 Destroy(petInsideObj[i].transform.gameObject);
             }
         }
@@ -74,7 +75,22 @@ public class PetNew : MonoBehaviour
 
         hasPetsNew = true;
 
+        _moveTop.SetBonusRevenuePet(indexPet);
+
         YandexGame.savesData.hasPetsNew = hasPetsNew;
         YandexGame.SaveProgress();
+    }
+    public void ShowNewPets(int currIndex)
+    {
+        for (int i = 0; i < hidePets.Length; i++)
+        {
+            if (i == currIndex && currIndex != hidePets.Length - 1)
+            {
+                if (hidePets[i + 1] != null)
+                {
+                    hidePets[i + 1].SetActive(false);
+                }
+            }
+        }
     }
 }

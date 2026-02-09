@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -105,6 +103,7 @@ public class ShopBtnPet : MonoBehaviour
             }
 
             PetNew.Instance.PickPets(PetNew.Instance.currentPetIndexNew);
+            PetNew.Instance.ShowNewPets(PetIndexNew);
         }
         else if (bought == 1)
         {
@@ -117,6 +116,7 @@ public class ShopBtnPet : MonoBehaviour
             {
                 statusText.text = "Bought";
             }
+            PetNew.Instance.ShowNewPets(PetIndexNew);
         }
         else if (bought != 1)
         {

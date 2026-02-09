@@ -14,7 +14,8 @@ namespace YG
 
         // Ваши сохранения
         public int bestScore = 0;
-        public float score = 0;
+        public float score = 500000;
+        public float cup = 0;
         public float rate = 100;
         public float bigRate = 500f;
         public float finalBigRate;
@@ -272,13 +273,33 @@ namespace YG
         public int currentCartIndex = 0;
         public bool hasCarts = true;
         public int cartBought_0 = 1;
-        public int cartBought_1;
-        public int cartBought_2;
-        public int cartBought_3;
-        public int cartBought_4;
-        public int cartBought_5;
-        public int cartBought_6;
-        public int cartBought_7;
+        public int cartBought_1 = 0;
+        public int cartBought_2 = 0;
+        public int cartBought_3 = 0;
+        public int cartBought_4 = 0;
+        public int cartBought_5 = 0;
+        public int cartBought_6 = 0;
+        public int cartBought_7 = 0;
+        public int cartBought_8 = 0;
+        public int cartBought_9 = 0;
+        public int cartBought_10 = 0;
+        public int cartBought_11 = 0;
+        public int cartBought_12 = 0;
+        public int cartBought_13 = 0;
+        public int cartBought_14 = 0;
+        public int cartBought_15 = 0;
+        public int cartBought_16 = 0;
+        public int cartBought_17 = 0;
+        public int cartBought_18 = 0;
+        public int cartBought_19 = 0;
+        public int cartBought_20 = 0;
+        public int cartBought_21 = 0;
+        public int cartBought_22 = 0;
+        public int cartBought_23 = 0;
+        public int cartBought_24 = 0;
+        public int cartBought_25 = 0;
+        public int cartBought_26 = 0;
+        public int cartBought_27 = 0;
 
         //public Vector3 neckPosition = new Vector3(806.48f, 10.30f, -6.33f);
         public SavesYG()

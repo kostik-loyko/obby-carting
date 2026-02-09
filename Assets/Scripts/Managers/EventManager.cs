@@ -19,7 +19,7 @@ public static class EventManager
 
     public static event UnityAction<string> skin0;
 
-    public static event UnityAction treeRemove;
+    public static event UnityAction cupSpawn;
 
     public static void OnTimerUpdate(float value) => TimerUpdate?.Invoke(value);
     public static void OnTimerStart() => TimerStart?.Invoke();
@@ -38,5 +38,5 @@ public static class EventManager
 
     public static void ByuSkin0(string id) => skin0?.Invoke(id);
 
-    public static void OnTreeRemove() => treeRemove?.Invoke();
+    public static void OnCupSpawn() => cupSpawn?.Invoke();
 }
